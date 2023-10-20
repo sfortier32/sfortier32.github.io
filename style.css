@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-name:hover, .fa.icon:hover {
     opacity: 0.8;
-    scale: 98%;
+    scale: 98.5%;
 }
 .fa-linkedin, .fa-github, .fa-envelope {
     color: black;
