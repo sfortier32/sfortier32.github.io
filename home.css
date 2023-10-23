@@ -107,7 +107,7 @@
     object-fit: cover;
 }
 .project-item:hover, .interest-item:hover {
-    opacity: 0.85;
+    opacity: 0.88;
     scale: 99.6%;
     cursor: pointer;
 }

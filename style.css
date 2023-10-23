@@ -4,8 +4,9 @@
 
 :root {
     font-family: "Circular Std Book", serif;
-    --gray2: rgb(233, 232, 227);
+    --gray2: rgb(233, 232, 226);
     --background: rgb(255, 254, 249);
+    --darkgray: rgb(103, 103, 103);
     --mask: linear-gradient(to right, 
         rgba(0, 0, 0, 1),   rgba(0,0,0, 1) 80%, rgba(0,0,0, 0)
         ) 100% 50% / 100% 100% repeat-x;
@@ -29,10 +30,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
     z-index:100;
     background-color: rgb(255, 254, 249);
-    padding: 0px 12px;
+    padding: 0px 15px;
 }
 .nav-name {
-    padding-left: 20px;
+    padding-left: 15px;
     font-size: 30px;
 }
 .sticky {
@@ -59,10 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 .fa-linkedin, .fa-github, .fa-envelope {
     color: black;
     float: right;
-}
-.fa-arrow-up {
-    color: black;
-    font-size: 1.25em !important;
 }
 
 /* Footer */

@@ -24,7 +24,7 @@ scrollback.addEventListener('click', (e) => {
 function loadFooter() {
     scrollback.classList.add('stack');
     scrollback.innerHTML = `
-        <img style="height: 20px;" src="https://live.staticflickr.com/65535/53280889465_fd6314f3d7_o.png">
+        <img style="height: 20px; padding-top: 20px;" src="https://live.staticflickr.com/65535/53280889465_fd6314f3d7_o.png">
         <div class="footer-text">Go Back Up</div>
     `;
 }
