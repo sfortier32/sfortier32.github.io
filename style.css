@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
     z-index:100;
     background-color: rgb(255, 254, 249);
-    font-family: "Circular Std Book", serif;
+    padding: 0px 12px;
 }
 .nav-name {
     padding-left: 20px;
@@ -63,4 +63,23 @@ h1, h2, h3, h4, h5, h6 {
 .fa-arrow-up {
     color: black;
     font-size: 1.25em !important;
+}
+
+/* Footer */
+/* #scrollback {
+    
+} */
+.stack {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+.stack:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+.footer-text {
+    font-size: 20px;
+    padding: 12px 0px;
 }

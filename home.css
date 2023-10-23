@@ -112,18 +112,6 @@
     cursor: pointer;
 }
 
-/* Footer */
-.stack {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-}
-.stack:hover {
-    opacity: 0.85;
-    cursor: pointer;
-}
-
 @media only screen and (max-width: 1000px) {
     .interests {
         display: flex;

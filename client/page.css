@@ -1,28 +1,74 @@
+:root {
+    --darkgray: rgb(103, 103, 103);
+    font-size: 19px;
+}
+p, h1 {
+    margin: 0;
+}
+h1 {
+    padding-top: 21px;
+    font-size: 38px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    text-align: left;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+    font-size: 22px;
+}
 
 .page {
     display: grid;
     justify-content: center;
     justify-items: center;
     padding-bottom: 75px;
-    padding-left: 90px;
-    padding-right: 90px;
     background-color: rgb(255, 254, 249);
-}
-.title {
-    font-size: 40px;
-    text-align: center;
 }
 .two-col {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    max-width: 900px;
-}
-.two-col p {
-    font-size: 20px;
-    padding-left: 25px;
+    grid-template-columns: 80px 160px;
+    column-gap: 130px;
 }
 
+.details {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-width: 900px;
+    gap: 100px;
+    padding: 65px 0px;
+}
+.response {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+    font-size: 18px;
+}
+
+
+.para {
+    max-width: 900px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.subtitle {
+    padding-top: 14px;
+    font-size: 22px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+}
+.subsubtitle {
+    padding-top: 12px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+}
 
 .tags {
     display: flex;
@@ -34,10 +80,49 @@
 .tag {
     border: 1.75px solid;
     font-weight: 500;
-    font-size: 20px;
-    border-radius: 6px;
-    padding: 8px;
+    font-size: 17px;
+    border-radius: 7px;
+    padding: 7px;
 }
 .collage {
     width: 100%;
+}
+.labeled-grid {
+    padding-top: 16px;
+}
+.three-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    max-width: 830px;
+}
+.photo-item{
+    width: 250px;
+}
+.sm-photo-item {
+    width: 200px;
+    padding-top: 6px;
+}
+.xs-photo-item {
+    width: 120px;
+}
+.caption {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+    padding-top: 10px;
+}
+
+.two-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 60px;
+    max-width: 830px;
+}
+.custom-header {
+    display: grid;
+    grid-template-columns: 580px 1fr;
 }
