@@ -9,7 +9,11 @@
     </head>
     <body>
         <div id="nav-bar" class="nav-bar"></div>
-        <div class="src-button">Hello</div>
+        <div class="src-button">
+            <div class="src-button-label">
+                <a title="Source Code" href="https://github.com/sfortier32/Recipe-Website" target="_blank" class="fa fa-terminal"></a>
+            </div>
+        </div>
         
         <div class="page">
             <h1>Recipe Database Website</h1>
@@ -19,15 +23,89 @@
                     <p class="field">Type</p>
                     <p class="response lora">Course Project</p>
                     <p class="field">Date</p>
-                    <p class="response lora">Jun – Jul 2023</p>
+                    <p class="response lora">July 2023<br>(2 weeks)</p>
                     <p class="field">Frameworks & Tech</p>
-                    <p class="response lora">JavaScript, HTML, CSS, REST, CRUD, Node.js, Express.js, PostreSQL</p>
+                    <p class="response lora">JavaScript, HTML, CSS, REST, Node.js, Express.js, PostreSQL</p>
                 </div>
-                <p>Project description</p>
+                <p><i>From the UMass Amherst CS 326: Web Programming July 2023 final project specifications:</i><br><br>
+                    The objective of this project is to design and develop a single page web application that
+                    links to an external site with a Node.js backend, using HTML, CSS, and JavaScript. The
+                    application should allow users to interact with it, perform CRUD operations, store data
+                    using local storage, and store data in the back-end. The back-end should be implemented
+                    in Node.js and communicate with the front-end using fetch. The project must utilize a database
+                    (MongoDB or PostgreSQL) and include routes for all CRUD operations.
+                </p>
             </div>
             <br>
 
-            
+            <img class="photo" src="https://live.staticflickr.com/65535/53281065933_a9f794031a_o.png">
+            <br>
+
+            <div class="para">
+                <h2>Initial Development</h2>
+                <p>With two weeks to create my first website, I began setting up a basic front-end and back-end. The initial
+                    website wouldn't be visually complex, only displaying routed queries in text lists to ensure the back-end was functioning
+                    correctly. Any designs implemented in HTML and CSS were not connected to the background until most buttons that the 
+                    functions would need were created.
+                </p>
+            </div>
+            <br>
+
+            <div class="para">
+                <h2>Bulk of Coding & Challenges</h2>
+                <p>Most of the time spent I spent coding was dedicated to the back-end of the data editor and creating a dynamic display. Much of
+                    the code needed to be conditionally because there were multiple tables within my database. I also needed a separate form for 
+                    each CRUD action, leaving me with 3 tables and nine forms to implement.<br><br>
+                    The most challenging part came with updating existing data. I didn't want users to have to re-enter every field into an update 
+                    form if they were only trying to change one field. So, I used PostgreSQL statements to pull data from empty fields to be pushed
+                    into the update query, which are not to be confused will null entries that clean the field.
+                </p>
+            </div>
+            <br>
+
+            <div class="labeled-grid-w">
+                <h3>Reference Images</h3>
+                <img class="sm-photo" src="https://cdn.dribbble.com/users/1407879/screenshots/7572171/media/4437d770b15722d5d1782a22c1e71e93.png?resize=1600x1200&vertical=center">
+                <h4 class="lora">"Meal Prep Delivery Service App" by Maciej Kałaska for weidelab on
+                    <a class="subtitle" href="https://dribbble.com/shots/7572171-Meal-Prep-Delivery-Service-App">Dribble</a>.</h4>
+                <br>
+                <img class="sm-photo right" src="https://cdn.dribbble.com/users/2566396/screenshots/15976675/media/1e9705c2c0c89ffcb7e990226c0f6aac.png?resize=1600x1200&vertical=center">
+                <h4 class="right lora">"School Admin - Dashboard - Database" by Muhammad Zaki Alzikri for Agensip on
+                    <a class="subtitle" href="https://dribbble.com/shots/15976675-School-Admin-Dashboard-Database">Dribble</a>.</h4>
+            </div>
+            <br><br>
+
+
+            <div class="para">
+                <h2>Final Features</h2>
+                <h3 style="font-size: 20px;">Main Display</h3>
+                <p>The main feature of the final web appliaction is a data display showing the three tables in our database: “Recipes”, “Ingredients”,
+                    “Tags.” In selecting a different table, the respective contents will be displayed for the user to scroll through.</p>
+                <br>
+                
+                <h3 style="font-size: 20px;">Data Editor</h3>
+                <p>The database editor panel serves to integrate CRUD functionality into the user interface. It's a pop-up that allows users
+                    to pick from the three tables and three actions: create, update, and delete. The editor is completely dynamic and will
+                    display a success or failure message depending on whether a user has entered in values for all the required variables and
+                    the fetch request processes smoothly.</p>
+                <br>
+                <div class="two-grid">
+                    <img class="tg-custom" src="https://live.staticflickr.com/65535/53281262794_b055c347dd_o.png">
+                    <img class="tg-custom" src="https://live.staticflickr.com/65535/53280018452_2dd02c0a10_o.png">
+                </div>
+                
+                <h3 style="font-size: 20px;">Generating Meals</h3>
+                <p>On the left side, users can access the generate-meals panel which attempts to rectify some of the difficulties
+                    associated with meal planning in college age populations. Users can select a number of days from one to seven, and a few
+                    predefined tags (“Cheap”, “Quick”, and “Bulk”) and subsequently generate a random selection of meals from the recipe
+                    database which meet the tag criteria. Not selecting any of the tags will return recipes with any available tags and new
+                    tags created by the user will not show up under the tags options on the side panel.
+                </p>
+            </div>
+            <br><br>
+
+            <img class="photo" src="https://live.staticflickr.com/65535/53279889077_57b9a3a511_o.png">
+
             <div id ="scrollback"></div>
             
         </div> <!-- end page -->

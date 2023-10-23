@@ -5,7 +5,7 @@ p, h1 {
     font-size: 19px;
 }
 h1 {
-    padding-top: 21px;
+    padding: 21px 0px;
     font-size: 38px;
 }
 h2 {
@@ -14,6 +14,17 @@ h2 {
 h3 {
     text-align: left;
     font-size: 22px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    color: var(--darkgray);
+}
+h4 {
+    margin: 0;
+    padding: 16px 0px;
+}
+.subtitle {
+    text-decoration: underline; 
+    color: var(--darkgray);
 }
 
 .src-button {
@@ -55,6 +66,15 @@ h3 {
 .labeled-grid {
     padding-top: 16px;
 }
+.labeled-grid-w {
+    display: grid;
+    padding-top: 16px;
+    grid-template-columns: 900px;
+}
+.right {
+    justify-self: end;
+}
+
 .three-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -73,7 +93,8 @@ h3 {
     grid-template-columns: 2fr 3fr;
     max-width: 900px;
     gap: 100px;
-    padding: 55px 0px;
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 .response {
     font-size: 18px;
@@ -83,10 +104,14 @@ h3 {
 .collage {
     width: 100%;
 }
+.photo {
+    width: 1150px;
+}
+.sm-photo {
+    width: 700px
+}
 .para {
     max-width: 900px;
-    padding-left: 90px;
-    padding-right: 90px;
 }
 .photo-item{
     width: 250px;
@@ -110,10 +135,16 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 60px;
-    max-width: 830px;
+    justify-items: center;
+    padding-top: 28px;
+    padding-bottom: 16px;
 }
 .custom-header {
     display: grid;
     grid-template-columns: 580px 1fr;
+}
+.tg-custom {
+    width: 335px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.25);
 }

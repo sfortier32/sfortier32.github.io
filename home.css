@@ -34,7 +34,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-gap: 50px;
+    grid-gap: 60px;
     padding-bottom: 75px;
 }
 .project-item {
