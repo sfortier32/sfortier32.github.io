@@ -1,150 +1,150 @@
-
 /* Basics */
-p, h1 {
-    margin: 0;
-    font-size: 19px;
+p,
+h1 {
+  margin: 0;
+  font-size: 19px;
 }
 h1 {
-    padding: 21px 0px;
-    font-size: 38px;
+  padding: 21px 0px;
+  font-size: 38px;
 }
 h2 {
-    font-size: 26px;
+  font-size: 26px;
 }
 h3 {
-    text-align: left;
-    font-size: 22px;
-    font-family: 'Lora', serif;
-    font-style: italic;
-    color: var(--darkgray);
+  text-align: left;
+  font-size: 22px;
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: var(--darkgray);
 }
 h4 {
-    margin: 0;
-    padding: 16px 0px;
+  margin: 0;
+  padding: 16px 0px;
 }
 .subtitle {
-    text-decoration: underline; 
-    color: var(--darkgray);
+  text-decoration: underline;
+  color: var(--darkgray);
 }
 
 .src-button {
-    z-index: 1;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(256, 256, 256, 0.92);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin: 40px;
-    box-shadow: 0 0 20px 0 rgb(172, 172, 168, 0.7);
+  z-index: 1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(256, 256, 256, 0.92);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 40px;
+  box-shadow: 0 0 20px 0 rgb(172, 172, 168, 0.7);
 }
 .fa-terminal {
-    color: black;
-    font-size: 1.44em !important;
+  color: black;
+  font-size: 1.44em !important;
 }
 .src-button-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 56px;
 }
 .src-button:hover {
-    scale: 104%;
+  scale: 104%;
 }
 
 /* Page */
 .page {
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    padding-bottom: 75px;
-    background-color: rgb(255, 254, 249);
-    z-index: 0;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding-bottom: 75px;
+  background-color: rgb(255, 254, 249);
+  z-index: 0;
 }
 .labeled-grid {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 .labeled-grid-w {
-    display: grid;
-    padding-top: 16px;
-    grid-template-columns: 900px;
+  display: grid;
+  padding-top: 16px;
+  grid-template-columns: 900px;
 }
 .right {
-    justify-self: end;
+  justify-self: end;
 }
 
 .three-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    max-width: 830px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  max-width: 830px;
 }
 
 /* Header */
 .two-col {
-    display: grid;
-    grid-template-columns: 80px 160px;
-    column-gap: 130px;
+  display: grid;
+  grid-template-columns: 80px 160px;
+  column-gap: 130px;
 }
 .details {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    max-width: 900px;
-    gap: 100px;
-    padding-top: 25px;
-    padding-bottom: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  max-width: 900px;
+  gap: 100px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 .response {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* Page Components */
 .collage {
-    width: 100%;
+  width: 100%;
 }
 .photo {
-    width: 1150px;
+  width: 1150px;
 }
 .sm-photo {
-    width: 700px
+  width: 700px;
 }
 .para {
-    max-width: 900px;
+  max-width: 900px;
 }
-.photo-item{
-    width: 250px;
+.photo-item {
+  width: 250px;
 }
 .sm-photo-item {
-    width: 200px;
-    padding-top: 6px;
+  width: 200px;
+  padding-top: 6px;
 }
 .caption {
-    text-align: center;
-    font-size: 17px;
-    padding-top: 10px;
+  text-align: center;
+  font-size: 17px;
+  padding-top: 10px;
 }
 
 .lora {
-    font-family: 'Lora', serif;
-    font-style: italic;
-    color: var(--darkgray);
+  font-family: "Lora", serif;
+  font-style: italic;
+  color: var(--darkgray);
 }
 .two-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 28px;
-    padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 28px;
+  padding-bottom: 16px;
 }
 .custom-header {
-    display: grid;
-    grid-template-columns: 580px 1fr;
+  display: grid;
+  grid-template-columns: 580px 1fr;
 }
 .tg-custom {
-    width: 335px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.25);
+  width: 335px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgb(0, 0, 0, 0.25);
 }

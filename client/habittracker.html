@@ -1,141 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="./page.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="module" src="../client.js" defer></script>
-    </head>
-    <body>
-        <div id="nav-bar" class="nav-bar"></div>
-        <div class="src-button">
-            <div class="src-button-label">
-                <a title="Source Code" href="https://github.com/sfortier32/Habit-Tracker" target="_blank" class="fa fa-terminal"></a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="../client.js" defer></script>
+  </head>
+  <body>
+    <div id="nav-bar" class="nav-bar"></div>
+    <div class="src-button">
+      <div class="src-button-label">
+        <a
+          title="Source Code"
+          href="https://github.com/sfortier32/Habit-Tracker"
+          target="_blank"
+          class="fa fa-terminal"
+        ></a>
+      </div>
+    </div>
+
+    <div class="page">
+      <h1>Habit Tracker</h1>
+
+      <div style="padding-bottom: 40px" class="details">
+        <div class="two-col">
+          <p class="field">Type</p>
+          <p class="response lora">Personal Project</p>
+          <p class="field">Date</p>
+          <p class="response lora">Sept – Oct 2023</p>
+          <p class="field">Frameworks & Tech</p>
+          <p class="response lora">SwiftUI, SwiftData, Figma</p>
         </div>
-        
-        <div class="page">
-            <h1>Habit Tracker</h1>
+        <p>
+          Every day, I found myself putting off tasks that I needed to do, only
+          remembering when the day had already passed. I wanted a way to keep
+          track of these habits. Turning to the app store, many of the apps were
+          cluttered with features and locked simple functions behind paywalls.
+          <br /><br />
+          I sought to create an app that would alleviate my problem, leeting
+          users create a wide range of habits, sort them into categories, and
+          feel motivated to achieve their goals.
+        </p>
+      </div>
+      <br />
 
-            <div style="padding-bottom: 40px;" class="details">
-                <div class="two-col">
-                    <p class="field">Type</p>
-                    <p class="response lora">Personal Project</p>
-                    <p class="field">Date</p>
-                    <p class="response lora">Sept – Oct 2023</p>
-                    <p class="field">Frameworks & Tech</p>
-                    <p class="response lora">SwiftUI, SwiftData, Figma</p>
-                </div>
-                <p>Every day, I found myself putting off tasks that I needed to do, only remembering when the day had already passed.
-                    I wanted a way to keep track of these habits. Turning to the app store, many of the apps were cluttered with
-                    features and locked simple functions behind paywalls.
-                    <br><br>
-                    I sought to create an app that would alleviate my problem, leeting users create a wide range of habits, sort them
-                    into categories, and feel motivated to achieve their goals.
-                </p>
-            </div>
-            <br>
+      <img
+        class="collage"
+        src="https://live.staticflickr.com/65535/53255518486_4933e2fe48_o.png"
+      />
+      <br /><br />
 
-            <img class="collage" src="https://live.staticflickr.com/65535/53255518486_4933e2fe48_o.png">
-            <br><br>
+      <div class="para">
+        <h2>Basic Features</h2>
+        <p>
+          The first couple weeks of the project were dedicated to creating a
+          home page with a date carousel where the user could perform CRUD
+          interactions on habits. The habit model was originally developed using
+          CoreData, but I was made aware of SwiftData's recent release after a
+          few days of work and rewrote the code. Since SwiftData is not very
+          capable when it comes to storing small quantities of data/variables,
+          the habit model has become extensive, storing current streaks, dates
+          and their completion statuses, etcetera.
+        </p>
+      </div>
+      <!-- end basics para -->
 
-            <div class="para">
-                <h2>Basic Features</h2>
-                <p>The first couple weeks of the project were dedicated to creating a home page with a date carousel where the user
-                    could perform CRUD interactions on habits. The habit model was originally developed using CoreData, but I was made
-                    aware of SwiftData's recent release after a few days of work and rewrote the code. Since SwiftData is not very capable
-                    when it comes to storing small quantities of data/variables, the habit model has become extensive, storing current streaks,
-                    dates and their completion statuses, etcetera.
-                </p>
-            </div> <!-- end basics para -->
+      <div class="labeled-grid">
+        <h3>Intro Pages</h3>
+        <div class="three-grid">
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255855834_08b31b4d76_o.png"
+          />
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255793428_4bb3a0bdea_o.png"
+          />
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255997735_978aa7eee4_o.png"
+          />
+        </div>
+      </div>
+      <!-- end basics photos row1 -->
+      <div class="labeled-grid">
+        <h3>Add New Habit</h3>
+        <div class="three-grid">
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53254618122_0660547e79_o.png"
+          />
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255503221_f80ec41828_o.png"
+          />
+        </div>
+      </div>
+      <!-- end basics photos row2 -->
+      <br /><br /><br />
 
-            <div class="labeled-grid">
-                <h3>Intro Pages</h3>
-                <div class="three-grid">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255855834_08b31b4d76_o.png">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255793428_4bb3a0bdea_o.png">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255997735_978aa7eee4_o.png">
-                </div>
-            </div> <!-- end basics photos row1 -->
-            <div class="labeled-grid">
-                <h3>Add New Habit</h3>
-                <div class="three-grid">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53254618122_0660547e79_o.png">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255503221_f80ec41828_o.png">
-                </div>
-            </div> <!-- end basics photos row2 -->
-            <br><br><br>
+      <div class="para">
+        <h2>Statistics & Motivation</h2>
+        <p>
+          Once the base actions were developed, I could begin deriving
+          statistics from each habit. I developed a grid to display habits and
+          their current streaks which are calculated and updated once the
+          statistics page is entered. There's also a weekly completion view that
+          shows a user's progress with colors that are tied to each habit
+          status. <br /><br />
+          The visuals attempt to convince users to continue competing habits by
+          displaying negative colors when missed, reminding them of previously
+          missed habits, and forcing them to consider the progress they've
+          already made.
+        </p>
+      </div>
+      <!-- end stats para -->
 
-            <div class="para">
-                <h2>Statistics & Motivation</h2>
-                <p>Once the base actions were developed, I could begin deriving statistics from each habit. I developed a grid to display habits and
-                    their current streaks which are calculated and updated once the statistics page is entered. There's also a weekly completion view
-                    that shows a user's progress with colors that are tied to each habit status.
-                    <br><br>
-                    The visuals attempt to convince users to continue competing
-                    habits by displaying negative colors when missed, reminding them of previously missed habits, and forcing them to consider the progress
-                    they've already made.
-                </p>
-            </div> <!-- end stats para -->
-            
-            <div style="column-gap: 60px;" class="two-grid">
-                <div><img class="photo-item" src="https://live.staticflickr.com/65535/53280606815_91312c4637_o.png">
-                    <div class="caption lora">Expanded Streaks</div>
-                </div>
-                <div><img class="photo-item" src="https://live.staticflickr.com/65535/53279252282_023acb243d_o.png">
-                    <div class="caption lora">Expanded Weekly View</div>
-                </div>
-            </div> <!-- end stats photos -->
-            <br><br>
+      <div style="column-gap: 60px" class="two-grid">
+        <div>
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53280606815_91312c4637_o.png"
+          />
+          <div class="caption lora">Expanded Streaks</div>
+        </div>
+        <div>
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53279252282_023acb243d_o.png"
+          />
+          <div class="caption lora">Expanded Weekly View</div>
+        </div>
+      </div>
+      <!-- end stats photos -->
+      <br /><br />
 
-            <div class="para">
-                <h2>Final Details</h2>
-                <p>After having completed the homepage, statistics page, and basic reset functions in the about page, I could focus on a few extra features
-                    that would polish the app. I designed and implemented a timer that could be activated on any habit with a minutes unit, displays
-                    confetti when finished, and has its progress halted and saved upon exiting. I then updated designs throughout the app to be more cohesive
-                    and streamlined before finally adding in an achievements page.
-                    <br><br>
-                    I used Figma to design my own achievement badges which would be displayed within a new achievements page in the app. These unlockable icons
-                    would futher reinforce habit completion and expand the ways in which the app appeals to a user's intrinsic reward system.
-                </p>
-            </div> <!-- end final para -->
-            <div class="labeled-grid">
-                <div class="custom-header">
-                    <h3>Other Finishes</h3>
-                    <h3>App Icon</h3>
-                </div>
-                <div class="three-grid">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255793378_5d7837ac05_o.png">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255992260_6acc0d14b7_o.png">
-                    <img class="sm-photo-item" src="https://live.staticflickr.com/65535/53280238906_50813e436e_o.png">
-                </div>
-            </div>
+      <div class="para">
+        <h2>Final Details</h2>
+        <p>
+          After having completed the homepage, statistics page, and basic reset
+          functions in the about page, I could focus on a few extra features
+          that would polish the app. I designed and implemented a timer that
+          could be activated on any habit with a minutes unit, displays confetti
+          when finished, and has its progress halted and saved upon exiting. I
+          then updated designs throughout the app to be more cohesive and
+          streamlined before finally adding in an achievements page.
+          <br /><br />
+          I used Figma to design my own achievement badges which would be
+          displayed within a new achievements page in the app. These unlockable
+          icons would futher reinforce habit completion and expand the ways in
+          which the app appeals to a user's intrinsic reward system.
+        </p>
+      </div>
+      <!-- end final para -->
+      <div class="labeled-grid">
+        <div class="custom-header">
+          <h3>Other Finishes</h3>
+          <h3>App Icon</h3>
+        </div>
+        <div class="three-grid">
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255793378_5d7837ac05_o.png"
+          />
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255992260_6acc0d14b7_o.png"
+          />
+          <img
+            class="sm-photo-item"
+            src="https://live.staticflickr.com/65535/53280238906_50813e436e_o.png"
+          />
+        </div>
+      </div>
 
-            <div class="labeled-grid">
-                <h3>Achievements</h3>
-                <div class="three-grid">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255996840_f416d61634_o.png">
-                    <img class="photo-item" src="https://live.staticflickr.com/65535/53255864679_56551ce8fa_o.png">
-                </div>
-            </div> <!-- end achievements photos -->
-            <br><br>
-            
-            <div class="para">
-                <h2>Attributions</h2>
-                <ul>
-                    <li><p>All code for the confetti effects was provided by @shaundon on GitHub under the repository
-                        <a style="text-decoration: underline;" href="https://github.com/shaundon/ConfettiDemo" target="_blank">ConfettiDemo</a>.</p>       
-                    </li>
-                    <li>
-                        <p>Basic style concepts were taken from Habit Tracker mobile IOS App by Purrweb UI/UX Agency on
-                            <a style="text-decoration: underline;" href="https://dribbble.com/shots/21367995-Habit-Tracker-Mobile-IOS-App" target="_blank">Dribble</a>.</p>
-                    </li>             
-                </ul>
-            </div>
-            <br><br>
+      <div class="labeled-grid">
+        <h3>Achievements</h3>
+        <div class="three-grid">
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255996840_f416d61634_o.png"
+          />
+          <img
+            class="photo-item"
+            src="https://live.staticflickr.com/65535/53255864679_56551ce8fa_o.png"
+          />
+        </div>
+      </div>
+      <!-- end achievements photos -->
+      <br /><br />
 
-            <div id ="scrollback"></div>
-        </div> <!-- end page -->
-    </body>
+      <div class="para">
+        <h2>Attributions</h2>
+        <ul>
+          <li>
+            <p>
+              All code for the confetti effects was provided by @shaundon on
+              GitHub under the repository
+              <a
+                style="text-decoration: underline"
+                href="https://github.com/shaundon/ConfettiDemo"
+                target="_blank"
+                >ConfettiDemo</a
+              >.
+            </p>
+          </li>
+          <li>
+            <p>
+              Basic style concepts were taken from Habit Tracker mobile IOS App
+              by Purrweb UI/UX Agency on
+              <a
+                style="text-decoration: underline"
+                href="https://dribbble.com/shots/21367995-Habit-Tracker-Mobile-IOS-App"
+                target="_blank"
+                >Dribble</a
+              >.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <br /><br />
+
+      <div id="scrollback"></div>
+    </div>
+    <!-- end page -->
+  </body>
 </html>

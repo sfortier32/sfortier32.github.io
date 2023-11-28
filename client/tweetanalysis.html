@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="../client.js" defer></script>
+  </head>
+  <body>
+    <div id="nav-bar" class="nav-bar"></div>
+    <div class="src-button">
+      <div class="src-button-label">
+        <a
+          title="Source Code"
+          href="https://github.com/sfortier32/Tweet-Analysis"
+          target="_blank"
+          class="fa fa-terminal"
+        ></a>
+      </div>
+    </div>
+
+    <div class="page">
+      <h1>Tweet Analysis</h1>
+
+      <div style="padding-bottom: 40px" class="details">
+        <div class="two-col">
+          <p class="field">Type</p>
+          <p class="response lora">Course Project</p>
+          <p class="field">Date</p>
+          <p class="response lora">Dec 2022<br />(1 week)</p>
+          <p class="field">Frameworks & Tech</p>
+          <p class="response lora">
+            R, R Shiny, leaflet, highcharter, rtweet, syuzhet
+          </p>
+        </div>
+        <p>
+          Throughout COMM 497DB: Survey of Digital Behavioral Data, students
+          used natural language processing to explore social issues on a more
+          individualized level, gathering and analyzing data from Twitter's API.
+          <br /><br />
+          We often discussed the emotional impacts of world events, reporting
+          biases, and location, while acknowledging the production and
+          consumption of misinformation and disinformation.
+        </p>
+      </div>
+
+      <div class="para">
+        <h2>Gathering Data</h2>
+        <p>
+          The project utilized Twitter's API to gather tweets using the the
+          hashtag "NATO," which which subsequently pulled from the dates
+          November 26, 2022 to November 30, 2022. My goal was to pick a somewhat
+          pollarizing topic and put it into a social context while possibly
+          revealing sentiments that aren't captured in official media.
+          <br /><br />
+          Gathering data proved to be challenging since many fields were
+          optional for users, i.e. location which was needed to create the main
+          map display. Subsequently, a set of 5,000 tweets provided by the API
+          was condensed down to 97 viable ones with 48 variables each to
+          analyze.
+          <br /><br />
+          The sentiment analysis was not dependent on having geocodes, so the
+          entire dataset could be utilized. The package
+          <code>syuzhet</code> provided a list of seniments and scores for each
+          tweet. These were then aggregated by date and sentiment to produce our
+          final dataset, each row being a date, feeling, and value between 0 and
+          1 with 1 being strongest and 0 being weakest.
+        </p>
+      </div>
+      <br />
+
+      <div class="labeled-grid">
+        <h3>Dataset Samples</h3>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: max-content max-content;
+            column-gap: 40px;
+          "
+        >
+          <img
+            style="object-fit: contain; height: 450px"
+            src="https://live.staticflickr.com/65535/53360971241_61fc528046_b.jpg"
+          />
+          <img
+            style="object-fit: contain; height: 450px"
+            src="https://live.staticflickr.com/65535/53361421075_3ee1fc5e03_b.jpg"
+          />
+          <h4 class="lora">
+            Aggregated Sentiments<br />(50 obs. of 3 variables)
+          </h4>
+          <h4 class="lora">API Output (97 obs. of 48 variables)</h4>
+        </div>
+      </div>
+      <br /><br />
+
+      <div class="para">
+        <h2>The Application</h2>
+        <p>In Progress...</p>
+      </div>
+      <br />
+
+      <div class="para">
+        <h2>Analysis</h2>
+        <p>In Progress...</p>
+      </div>
+      <br />
+
+      <div id="scrollback"></div>
+    </div>
+    <!-- end page -->
+  </body>
+</html>
