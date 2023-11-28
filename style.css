@@ -5,6 +5,7 @@
 :root {
     font-family: "Circular Std Book", serif;
     --gray2: rgb(233, 232, 226);
+    --gray1: rgb(239, 238, 232);
     --background: rgb(255, 254, 249);
     --darkgray: rgb(103, 103, 103);
     --mask: linear-gradient(to right, 
@@ -20,6 +21,12 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
+}
+.sentence-link {
+    color: gray;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 20px;
 }
 
 /* Header */
