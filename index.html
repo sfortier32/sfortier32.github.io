@@ -38,8 +38,8 @@
           "
         >
           <h1 style="height: max-content">Projects</h1>
-          <div>
-            <button id="filter-button" class="drop-down">
+          <div class="dropdown" style="float: right">
+            <button id="filter-button" class="dropdown-button">
               Filter
               <img
                 style="object-fit: contain; height: 15px"
@@ -47,17 +47,16 @@
                 alt="filter"
               />
             </button>
-            <div id="filter-container" class="filters filters-active">
-              <ul class="filters-list">
-                  <input id="data-science" type="checkbox" checked="true" />
-                  <label for="data-science">Data Science</label>
-                </li>
-                <li>
-                  <input id="full-stack" type="checkbox" checked="true" />
-                  <label for="full-stack">Full Stack</label>
-                </li>
-              </ul>
-            </div>
+            <ul id="filter-container" class="dropdown-content">
+              <li>
+                <input id="data-science" type="checkbox" checked="true" />
+                <label for="data-science">Data Science</label>
+              </li>
+              <li>
+                <input id="full-stack" type="checkbox" checked="true" />
+                <label for="full-stack">Full Stack</label>
+              </li>
+            </ul>
           </div>
         </div>
         <br />
