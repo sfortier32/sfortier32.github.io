@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script type="module" src="home.js"></script>
     <script type="module" src="client.js"></script>
     <script type="module" src="../client/header.js" defer></script>
   </head>
@@ -29,10 +30,39 @@
         </div>
         <!-- end summary -->
 
-        <h1>Projects</h1>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <h1 style="height: max-content">Projects</h1>
+          <div>
+            <button id="filter-button" class="drop-down">
+              Filter
+              <img
+                style="object-fit: contain; height: 15px"
+                src="../images/list-filter.svg"
+                alt="filter"
+              />
+            </button>
+            <div id="filter-container" class="filters filters-active">
+              <ul class="filters-list">
+                  <input id="data-science" type="checkbox" checked="true" />
+                  <label for="data-science">Data Science</label>
+                </li>
+                <li>
+                  <input id="full-stack" type="checkbox" checked="true" />
+                  <label for="full-stack">Full Stack</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <br />
         <div class="projects">
-          <a href="./client/habittracker.html">
+          <a class="full-stack filter-item" href="./client/habittracker.html">
             <div class="project-item">
               <img
                 class="collage"
@@ -52,7 +82,10 @@
             <!-- end item -->
           </a>
 
-          <a href="./client/recipewebsite.html">
+          <a
+            class="data-science full-stack filter-item"
+            href="./client/recipewebsite.html"
+          >
             <div class="project-item">
               <img
                 class="collage"
@@ -92,7 +125,10 @@
                 </div>
             </a> -->
 
-          <a href="./client/tweetanalysis.html">
+          <a
+            class="data-science filter-item"
+            href="./client/tweetanalysis.html"
+          >
             <div class="project-item">
               <img
                 class="collage"
