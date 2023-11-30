@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="./page.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="module" src="../client.js" defer></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../resources/css/style.css" />
+    <link rel="stylesheet" href="../resources/css/page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="module" src="../client.js" defer></script>
+  </head>
+  <body>
+    <div id="nav-bar" class="nav-bar"></div>
+    <div class="src-button">
+      <div class="src-button-label">
+        <a
+          title="Source Code"
+          href="https://github.com/sfortier32/USDA-FoodCentral-Bread"
+          target="_blank"
+          class="fa fa-terminal"
+        ></a>
+      </div>
+    </div>
 
-        <div id="nav-bar" class="nav-bar"></div>
-        <div class="src-button">
-            <div class="src-button-label">
-                <a title="Source Code" href="https://github.com/sfortier32/USDA-FoodCentral-Bread" target="_blank" class="fa fa-terminal"></a>
-            </div>
+    <div class="page">
+      <h1>USDA FoodCentral Analysis</h1>
+
+      <div class="details">
+        <div class="two-col">
+          <p class="field">Type</p>
+          <p class="response lora">Course Project</p>
+          <p class="field">Date</p>
+          <p class="response lora">December 2022</p>
+          <p class="field">Frameworks & Tech</p>
+          <p class="response lora">
+            Python, matplotlib, seaborn, scikit-learn, Data Processing
+          </p>
         </div>
-        
-        <div class="page">
-            <h1>USDA FoodCentral Analysis</h1>
+        <p>Project description</p>
+      </div>
+      <br />
 
-            <div class="details">
-                <div class="two-col">
-                    <p class="field">Type</p>
-                    <p class="response lora">Course Project</p>
-                    <p class="field">Date</p>
-                    <p class="response lora">December 2022</p>
-                    <p class="field">Frameworks & Tech</p>
-                    <p class="response lora">Python, matplotlib, seaborn, scikit-learn, Data Processing</p>
-                </div>
-                <p>Project description</p>
-            </div>
-            <br>
-
-            
-            <div id ="scrollback"></div>
-            
-        </div> <!-- end page -->
-    </body>
+      <div id="scrollback"></div>
+    </div>
+    <!-- end page -->
+  </body>
 </html>

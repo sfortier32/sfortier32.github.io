@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap);
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("fonts/CircularStd-Book.ttf");
+}
+:root {
+  font-family: "Circular Std Book";
+  --gray2: rgb(233, 232, 226);
+  --gray1: rgb(239, 238, 232);
+  --background: rgb(255, 254, 249);
+  --darkgray: rgb(103, 103, 103);
+  --mask: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    )
+    100% 50% / 100% 100% repeat-x;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+p {
+  text-indent: 0 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+.sentence-link {
+  color: gray;
+  font-family: url("../fonts/CircularStd-Medium.ttf");
+  font-style: italic;
+  font-size: 20px;
+}
+
+/* Header */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  z-index: 100;
+  background-color: rgb(255, 254, 249);
+  padding: 0px 15px;
+}
+.nav-name {
+  padding-left: 15px;
+  font-size: 30px;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 254, 249, 0.94);
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.fa.icon {
+  flex: right;
+  padding-left: 34px;
+}
+.nav-name:hover,
+.fa.icon:hover {
+  opacity: 0.8;
+  scale: 98.5%;
+}
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+  color: black;
+  float: right;
+}
+
+/* Footer */
+/* #scrollback {
+    
+} */
+.stack {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+.stack:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+.footer-text {
+  font-size: 20px;
+  padding: 12px 0px;
+}
